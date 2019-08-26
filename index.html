@@ -3,15 +3,45 @@
 	<head>
 		<meta charset="utf-8" />
 		<title></title>
+		<style>
+			.color{
+				background-color: aqua;
+			}
+			.firstSpan{
+				width:400px;
+				/* 行级块元素 */
+				display: inline-block;
+				/* 块元素 */
+				/* display: block; */
+				/* 行元素 */
+				/* display: inline; */
+				background-color: red;
+			}
+			.secondSpan{
+				background-color: yellow;
+			}
+			.thirdSpan{
+				background-color: blue;
+			}
+			img{
+				width: 100px;
+				height: 100px;
+			}
+		</style>
 	</head>
 	<body>
 		<div id="">
 			<input type="text" value="this is my first github page111" />
 		</div>
 		
-		<div id="">
+		<div id="" class = "color">
+			<img src="img/img1.jpg"/>
 			<img src="img/img1.jpg"/>
 		</div>
+		
+		<span class = "firstSpan">行级元素，长宽不可改，多个行级元素可以处于一行</span>
+		<span class = "secondSpan">行级元素，长宽不可改，多个行级元素可以处于一行</span>
+		<span class = "thirdSpan">行级元素，长宽不可改，多个行级元素可以处于一行</span>
 		<!-- ul是无需的 type 默认是disc(实心圆)-->
 			<ul type="square">
 				<li type="square">汽车</li>
