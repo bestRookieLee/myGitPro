@@ -1,3 +1,2 @@
-你是大傻子
-不，你啥也不是
-你是怎么知道的。
+1.java Arrays.asList得到的是静态内部类ArrayList，并没有实现add方法
+    https://blog.csdn.net/xldmx/article/details/89304432
