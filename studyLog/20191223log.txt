@@ -1,2 +1,31 @@
 1.java Arrays.asList得到的是静态内部类ArrayList，并没有实现add方法
     https://blog.csdn.net/xldmx/article/details/89304432
+2.关于pgsql的substr方法
+    select "substring" (string [from int] [for int]);
+    从第一个开始计数，第一个编号为1
+    第二个参数表示取的字符个数
+    比如：
+    select substr('1234'，1，1) as re 结果是：1
+    但是第一个参数传0，也不会报错，如果：
+    select substr('1234',0,1) as re 结果是：空字符串
+3.两种文件读取方式
+    方法一：
+        InputStreamReader reader = new InputStreamReader(new FileInputStream(filePathString), "UTF-8");
+        BufferedReader bufferedReader = new BufferedReader(reader);
+        String line;
+        while ((line = bufferedReader.readLine()) != null){
+            //do something
+        }
+        reader.close();
+    方法二：
+        BufferedReader reader = new BufferedReader(new FileReader(filePathString));
+        String line;
+        while ((line = reader.readLine()) != null){
+            //do something
+        }
+        reader.close();
+    第二种方法是默认编码（默认utf-8）,第一种可能主动设置编码，来自网络
+    br = new BufferedReader(new InputStreamReader(new FileInputStream(template), "utf-8"));
+    bw = new BufferedWriter(new OutputStreamWriter(new FileOutStream(new File(path)), "utf-8") );
+4.java Arrays.asList得到的是静态内部类ArrayList，并没有实现add方法
+    https://blog.csdn.net/xldmx/article/details/89304432
