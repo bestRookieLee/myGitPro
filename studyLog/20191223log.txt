@@ -1,4 +1,5 @@
 1.java Arrays.asList得到的是静态内部类ArrayList，并没有实现add方法
+
     https://blog.csdn.net/xldmx/article/details/89304432
 2.关于pgsql的substr方法
     select "substring" (string [from int] [for int]);
@@ -29,3 +30,11 @@
     bw = new BufferedWriter(new OutputStreamWriter(new FileOutStream(new File(path)), "utf-8") );
 4.java Arrays.asList得到的是静态内部类ArrayList，并没有实现add方法
     https://blog.csdn.net/xldmx/article/details/89304432
+5.List 常用去重方法
+    https://www.cnblogs.com/zjfjava/p/9897650.html
+6.结合spring的一些钩子函数，看bean的生命周期
+    https://blog.csdn.net/qq_32314335/article/details/103608952
+7.数据结构与算法——常用数据结构及其Java实现
+    https://www.cnblogs.com/javafirst0/p/10825309.html
+8.Stack，ArrayDeque，LinkedList的区别
+    https://blog.csdn.net/cartoon_/article/details/87992743
